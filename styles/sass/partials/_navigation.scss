@@ -1,0 +1,21 @@
+.navbar {
+  .navItemFlex {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+
+    li {
+      .navLinks {
+        color: $tertiary;
+        padding: 10px 25px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

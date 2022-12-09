@@ -278,6 +278,53 @@ template {
   text-align: center;
 }
 
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "'Catamaran', sans-serif";
+  font-size: 1rem;
+  color: #E75605;
+}
+
+h1,
+h2 {
+  font-family: "'Montserrat', sans-serif";
+  color: #E75605;
+  margin: 0;
+}
+
+h1 {
+  font-size: 146.4px;
+  font-size: 7.32rem;
+  line-height: 120px;
+}
+
+h2 {
+  font-size: 42px;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 29px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navItemFlex li .navLinks {
+  font-family: "'Montserrat', sans-serif";
+  line-height: 29px;
+  font-size: 20px;
+  font-size: 1rem;
+}
+
 .wrapper {
   max-width: 1300px;
   width: 90%;
@@ -291,6 +338,28 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
+}
+
+header {
+  min-height: 100vh;
+}
+
+.navbar .navItemFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.navbar .navItemFlex li .navLinks {
+  color: #1F2022;
+  padding: 10px 25px;
+}
+.navbar .navItemFlex li .navLinks:hover, .navbar .navItemFlex li .navLinks:focus, .navbar .navItemFlex li .navLinks:active {
+  color: #E75605;
 }
