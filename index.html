@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!------------- GOOGLE FONTS ------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Montserrat:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!------------- FONT AWESOME ------------->
     <script
       src="https://kit.fontawesome.com/6d588fc2f3.js"
@@ -12,19 +18,21 @@
     ></script>
     <title>Hangry Tummy</title>
     <!------------- CUSTOM STYLESHEET ------------->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <a href="#mainContent" class="skipLink">Skip to the main content</a>
     <header>
-      <nav>
+      <nav class="Navbar">
         <li><a href="#" class="navLinks">Home</a></li>
         <li><a href="#" class="navLinks">About</a></li>
         <li><a href="#" class="navLinks">Blog</a></li>
         <li><a href="#" class="navLinks">Contact</a></li>
       </nav>
+      <!-- .Navbar -->
 
-      <div class="headerContentContainer">
+      <div class="headerContainer">
         <div class="headerImg">
           <img src="./assets/header-burger.png" alt="Hamburger" />
         </div>
@@ -57,7 +65,9 @@
             </a>
           </li>
         </ul>
+        <!-- .socialMedia -->
       </div>
+      <!-- .headerContainer -->
     </header>
 
     <main id="mainContent"></main>
