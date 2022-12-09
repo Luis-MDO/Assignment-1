@@ -353,7 +353,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 40px;
+  padding-top: 42px;
   text-transform: uppercase;
 }
 .navbar .navItemFlex li .navLinks {
