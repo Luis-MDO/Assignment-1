@@ -1,0 +1,18 @@
+section.theGram {
+
+  h2 {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .galleryFlex {
+    display: flex;
+    min-width: 96%;
+    padding-left: 26px;
+
+
+    .gramImgContainer {
+      width: calc(100% / 3);
+    }
+  }
+}

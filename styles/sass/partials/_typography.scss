@@ -42,7 +42,8 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  transition: .3s;
+  cursor: pointer;
+  transition: .2s;
 
   &.btn {
     color: $tertiary;

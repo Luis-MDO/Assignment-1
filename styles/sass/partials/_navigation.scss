@@ -1,21 +1,19 @@
-header {
-  .navbar {
-    .navItemFlex {
-      display: flex;
-      justify-content: center;
-      padding-top: 42px;
-      text-transform: uppercase;
+.navbar {
+  .navItemFlex {
+    display: flex;
+    justify-content: center;
+    padding-top: 42px;
+    text-transform: uppercase;
 
-      li {
-        .navLinks {
-          color: $tertiary;
-          padding: 10px 25px;
+    li {
+      .navLinks {
+        color: $tertiary;
+        padding: 10px 25px;
 
-          &:hover,
-          &:focus,
-          &:active {
-            color: $primary;
-          }
+        &:hover,
+        &:focus,
+        &:active {
+          color: $primary;
         }
       }
     }

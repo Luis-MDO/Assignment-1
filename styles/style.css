@@ -325,8 +325,9 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 a.btn {
   color: #1F2022;
@@ -415,7 +416,7 @@ header .socialMedia a i {
   padding: 8px 0;
 }
 
-header .navbar .navItemFlex {
+.navbar .navItemFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,11 +426,11 @@ header .navbar .navItemFlex {
   padding-top: 42px;
   text-transform: uppercase;
 }
-header .navbar .navItemFlex li .navLinks {
+.navbar .navItemFlex li .navLinks {
   color: #1F2022;
   padding: 10px 25px;
 }
-header .navbar .navItemFlex li .navLinks:hover, header .navbar .navItemFlex li .navLinks:focus, header .navbar .navItemFlex li .navLinks:active {
+.navbar .navItemFlex li .navLinks:hover, .navbar .navItemFlex li .navLinks:focus, .navbar .navItemFlex li .navLinks:active {
   color: #E75605;
 }
 
@@ -495,7 +496,7 @@ section.contactLinks {
           align-items: center;
   background: #E75605;
   padding: 75px 0;
-  height: 300px;
+  height: 400px;
 }
 section.contactLinks div {
   display: -webkit-box;
@@ -506,4 +507,19 @@ section.contactLinks div {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 45px;
+}
+
+section.theGram h2 {
+  padding: 80px 0;
+  text-align: center;
+}
+section.theGram .galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 96%;
+  padding-left: 26px;
+}
+section.theGram .galleryFlex .gramImgContainer {
+  width: 33.3333333333%;
 }
