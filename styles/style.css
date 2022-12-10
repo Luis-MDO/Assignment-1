@@ -299,6 +299,7 @@ h1 {
   font-size: 146.4px;
   font-size: 7.32rem;
   line-height: 120px;
+  font-weight: 400;
 }
 
 h2 {
@@ -327,7 +328,7 @@ a {
 
 .wrapper {
   max-width: 1300px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -345,8 +346,34 @@ img {
 header {
   min-height: 100vh;
 }
+header .headerContentFlex,
+header .headerContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .headerContentContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .headerContentContainer h1 span {
+  display: block;
+}
+header .socialMedia {
+  padding: 0 30px 50px 0;
+}
+header .socialMedia a {
+  padding: 15px;
+}
+header .socialMedia a i {
+  padding: 8px 0;
+}
 
-.navbar .navItemFlex {
+header .navbar .navItemFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,10 +383,10 @@ header {
   padding-top: 42px;
   text-transform: uppercase;
 }
-.navbar .navItemFlex li .navLinks {
+header .navbar .navItemFlex li .navLinks {
   color: #1F2022;
   padding: 10px 25px;
 }
-.navbar .navItemFlex li .navLinks:hover, .navbar .navItemFlex li .navLinks:focus, .navbar .navItemFlex li .navLinks:active {
+header .navbar .navItemFlex li .navLinks:hover, header .navbar .navItemFlex li .navLinks:focus, header .navbar .navItemFlex li .navLinks:active {
   color: #E75605;
 }

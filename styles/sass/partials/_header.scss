@@ -1,3 +1,33 @@
 header {
   min-height: 100vh;
+
+  .headerContentFlex,
+  .headerContentContainer {
+    display: flex;
+  }
+
+  .headerContentContainer {
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .socialMedia {
+    padding: 0 30px 50px 0;
+
+    a {
+      padding: 15px;
+
+      i {
+        padding: 8px 0;
+      }
+    }
+  }
+
+
 }
