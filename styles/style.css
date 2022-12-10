@@ -278,6 +278,11 @@ template {
   text-align: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 125%;
 }
@@ -307,6 +312,7 @@ h2 {
   font-size: 2.1rem;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 6px;
 }
 
 p {
@@ -329,13 +335,15 @@ a.btn {
   line-height: 29px;
   text-transform: uppercase;
   text-align: center;
-  border: 2px solid #E75605;
+  border: 3px solid #E75605;
   padding: 10px 25px;
 }
 a.btn:hover, a.btn:focus {
   background-color: #E75605;
   color: #ffffff;
-  border: 2px solid #1F2022;
+  border: 4px solid #1F2022;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .navbar .navItemFlex li .navLinks {
@@ -360,6 +368,10 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+p {
+  padding-bottom: 23px;
 }
 
 header .headerContentFlex,
@@ -427,6 +439,29 @@ main .ourMenu .ourMenuFlex .ourMenuContentContainer .ourMenuContent {
   padding-bottom: 30px;
   max-width: 72%;
 }
-main .ourMenu .ourMenuFlex .ourMenuContentContainer .ourMenuContent p {
-  padding-bottom: 10px;
+
+section.dessert {
+  background-color: #f8f9fa;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.dessert .dessertContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.dessert .dessertContentContainer .dessertImgContainer {
+  max-width: 20%;
+}
+section.dessert .dessertContentContainer .dessertContent {
+  max-width: 65%;
+  padding-left: 30px;
 }

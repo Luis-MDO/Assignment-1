@@ -1,0 +1,22 @@
+section.dessert {
+  background-color: #f8f9fa;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+
+  .dessertContentContainer {
+    display: flex;
+    justify-content: center;
+
+    .dessertImgContainer {
+      max-width: 20%;
+
+    }
+
+    .dessertContent {
+      max-width: 65%;
+      padding-left: 30px;
+    }
+  }
+}
