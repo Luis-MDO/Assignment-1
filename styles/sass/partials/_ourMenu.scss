@@ -1,0 +1,28 @@
+main {
+  .ourMenu {
+
+    .ourMenuFlex {
+
+      display: flex;
+
+      .ourMenuImgContainer {
+        min-width: 50%;
+      }
+
+      .ourMenuContentContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ourMenuContent {
+          padding-bottom: 30px;
+          max-width: 72%;
+
+          p {
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

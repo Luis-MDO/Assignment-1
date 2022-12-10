@@ -1,5 +1,5 @@
 header {
-  min-height: 100vh;
+  // min-height: 100vh;
 
   .headerContentFlex,
   .headerContentContainer {
@@ -18,16 +18,14 @@ header {
   }
 
   .socialMedia {
-    padding: 0 30px 50px 0;
+    padding: 0 50px 50px 0;
 
     a {
-      padding: 15px;
+      // padding: 15px;
 
       i {
         padding: 8px 0;
       }
     }
   }
-
-
 }

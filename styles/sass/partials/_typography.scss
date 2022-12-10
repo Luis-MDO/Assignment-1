@@ -24,16 +24,39 @@ h1 {
 h2 {
   @include fontSize(42);
   font-weight: 700;
+  text-transform: uppercase
 }
 
 p {
   line-height: 29px;
+  @include fontSize(20);
+  color: $tertiary;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   transition: .3s;
+
+  &.btn {
+    color: $tertiary;
+    font-family: $primaryFont;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+
+    border: 2px solid $primary;
+    padding: 10px 25px;
+
+
+    &:hover,
+    &:focus {
+      background-color: $primary;
+      color: $secondary;
+      border: 2px solid $tertiary;
+    }
+  }
 }
 
 .navbar {
