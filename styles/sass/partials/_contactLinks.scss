@@ -4,7 +4,7 @@ section.contactLinks {
   align-items: center;
   background: $primary;
   padding: 75px 0;
-  height: 400px;
+  max-height: 60vh;
 
   div {
     display: flex;

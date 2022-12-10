@@ -55,6 +55,7 @@ a {
   text-align: center;
   border: 3px solid $primary;
   padding: 10px 25px;
+  @include fontSize(20);
 
   &:hover,
   &:focus {

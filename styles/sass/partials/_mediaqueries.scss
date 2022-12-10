@@ -1,0 +1,124 @@
+@media(max-width: 1170px) {
+
+  h2 {
+    @include fontSize(24);
+  }
+
+  .btn {
+    padding: 10px 20px;
+    @include fontSize(14);
+  }
+
+  .ourMenuContent {
+    padding: 20px 0;
+  }
+
+  .ourMenuContent,
+  .dessertContent {
+
+    p {
+      @include fontSize(17);
+    }
+  }
+}
+
+@media(max-width: 1260px) {
+  .theGram {
+    img {
+      max-width: 95%;
+    }
+  }
+}
+
+@media(max-width: 1045px) {
+
+  footer {
+
+    .footerContentFlex {
+      padding-left: 26px;
+
+      .stayUpdated {
+        padding-left: 120px;
+      }
+    }
+
+    form {
+
+      input[type=email] {
+        width: 321px;
+        padding-left: 30px;
+
+      }
+    }
+  }
+}
+
+@media(max-width: 925px) {
+
+  header {
+    h1 {
+      @include fontSize(100);
+      line-height: 100px;
+    }
+
+    .socialMedia {
+      padding: 0 15px 50px 50px;
+    }
+  }
+
+  section {
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  .ourMenuFlex {
+    flex-direction: column;
+    padding-bottom: 28px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dessert {
+
+    .dessertContentContainer {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+      width: 90%;
+      margin: 0 auto;
+
+      .dessertImgContainer {
+        min-width: 100%;
+        padding: 50px 0 20px 268px;
+      }
+    }
+  }
+
+  footer {
+
+    .footerContentFlex {
+      padding-left: 26px;
+
+      .stayUpdated {
+        padding-left: 80px;
+      }
+    }
+
+    form {
+
+      input[type=email] {
+        width: 300px;
+        padding-left: 30px;
+        @include fontSize(14);
+
+      }
+    }
+  }
+}
