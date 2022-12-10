@@ -353,6 +353,23 @@ a.btn:hover, a.btn:focus {
   font-size: 1rem;
 }
 
+section.contactLinks {
+  color: #ffffff;
+}
+section.contactLinks div {
+  font-family: "'Montserrat', sans-serif";
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+section.contactLinks div i {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-size: 2.5rem;
+}
+
 .wrapper {
   max-width: 1300px;
   width: 100%;
@@ -464,4 +481,29 @@ section.dessert .dessertContentContainer .dessertImgContainer {
 section.dessert .dessertContentContainer .dessertContent {
   max-width: 65%;
   padding-left: 30px;
+}
+
+section.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E75605;
+  padding: 75px 0;
+  height: 300px;
+}
+section.contactLinks div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 45px;
 }

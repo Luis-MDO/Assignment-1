@@ -1,0 +1,14 @@
+section.contactLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary;
+  padding: 75px 0;
+  height: 300px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px;
+  }
+}
