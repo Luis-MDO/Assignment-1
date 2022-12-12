@@ -1,0 +1,18 @@
+.btn {
+  outline: solid 4px $primary;
+  transition: outline 0.5s linear;
+  margin: 0.5em;
+  color: $secondary;
+  font-family: $primaryFont;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  @include fontSize(20);
+
+  &:hover,
+  &:focus {
+    outline-width: 7px;
+  }
+}

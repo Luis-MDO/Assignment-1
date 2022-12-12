@@ -278,28 +278,6 @@ template {
   text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 125%;
-}
-
-body {
-  font-family: "'Catamaran', sans-serif";
-  font-size: 1rem;
-  color: #E75605;
-}
-
-h1,
-h2 {
-  font-family: "'Montserrat', sans-serif";
-  color: #E75605;
-  margin: 0;
-}
-
 h1 {
   font-size: 146.4px;
   font-size: 7.32rem;
@@ -330,25 +308,6 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-.btn {
-  outline: solid 4px #E75605;
-  -webkit-transition: outline 0.5s linear;
-  transition: outline 0.5s linear;
-  margin: 0.5em;
-  color: #1F2022;
-  font-family: "'Montserrat', sans-serif";
-  font-weight: 700;
-  line-height: 29px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-size: 1rem;
-}
-.btn:hover, .btn:focus {
-  outline-width: 7px;
-}
-
 .navbar .navItemFlex li .navLinks {
   font-family: "'Montserrat', sans-serif";
   line-height: 29px;
@@ -373,10 +332,51 @@ section.contactLinks div i {
   font-size: 2rem;
 }
 
+.btn {
+  outline: solid 4px #E75605;
+  -webkit-transition: outline 0.5s linear;
+  transition: outline 0.5s linear;
+  margin: 0.5em;
+  color: #1F2022;
+  font-family: "'Montserrat', sans-serif";
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-size: 1rem;
+}
+.btn:hover, .btn:focus {
+  outline-width: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "'Catamaran', sans-serif";
+  font-size: 1rem;
+  color: #E75605;
+}
+
 .wrapper {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "'Montserrat', sans-serif";
+  color: #E75605;
+  margin: 0;
 }
 
 ul {
