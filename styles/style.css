@@ -326,36 +326,27 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn {
+  outline: solid 4px #E75605;
+  -webkit-transition: outline 0.5s linear;
+  transition: outline 0.5s linear;
+  margin: 0.5em;
   color: #1F2022;
   font-family: "'Montserrat', sans-serif";
   font-weight: 700;
   line-height: 29px;
   text-transform: uppercase;
   text-align: center;
-  border: 3px solid #E75605;
-  padding: 10px 25px;
+  padding: 10px 20px;
   font-size: 20px;
   font-size: 1rem;
 }
 .btn:hover, .btn:focus {
-  background-color: #E75605;
-  color: #ffffff;
-  border: 4px solid #1F2022;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-}
-
-.noTransition:hover, .noTransition:focus {
-  background-color: #E75605;
-  color: #ffffff;
-  border: 3px solid #1F2022;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  outline-width: 7px;
 }
 
 .navbar .navItemFlex li .navLinks {
@@ -373,13 +364,13 @@ section.contactLinks div {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1rem;
 }
 section.contactLinks div i {
   padding-bottom: 20px;
-  font-size: 50px;
-  font-size: 2.5rem;
+  font-size: 40px;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -400,7 +391,7 @@ img {
 }
 
 p {
-  padding-bottom: 23px;
+  padding-bottom: 30px;
 }
 
 header .headerContentFlex,
@@ -421,7 +412,7 @@ header .headerContentContainer h1 span {
   display: block;
 }
 header .socialMedia {
-  padding: 0 50px 50px 0;
+  padding: 0 20px 50px 0;
 }
 header .socialMedia a {
   padding: 15px;
@@ -430,6 +421,12 @@ header .socialMedia a i {
   padding: 8px 0;
 }
 
+.navbar i {
+  display: none;
+  color: #000000;
+  font-size: 40px;
+  font-size: 2rem;
+}
 .navbar .navItemFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +471,7 @@ main .ourMenu .ourMenuFlex .ourMenuContentContainer .ourMenuContent {
 
 section.dessert {
   background-color: #f8f9fa;
+  padding: 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,9 +486,6 @@ section.dessert .dessertContentContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-section.dessert .dessertContentContainer .dessertImgContainer {
-  max-width: 20%;
 }
 section.dessert .dessertContentContainer .dessertContent {
   max-width: 65%;
@@ -508,8 +503,7 @@ section.contactLinks {
       -ms-flex-align: center;
           align-items: center;
   background: #E75605;
-  padding: 75px 0;
-  max-height: 60vh;
+  padding: 120px 0;
 }
 section.contactLinks div {
   display: -webkit-box;
@@ -545,7 +539,7 @@ footer {
   margin-top: 20px;
 }
 footer h2 {
-  padding-left: 40px;
+  padding-left: 16px;
 }
 footer .footerContentFlex {
   display: -webkit-box;
@@ -559,28 +553,22 @@ footer .footerContentFlex {
 footer .stayUpdated {
   padding-left: 150px;
 }
-footer form {
+footer .stayUpdated form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer form input[type=email] {
+footer .stayUpdated form input[type=email] {
   width: 400px;
   border: none;
   background-color: #ffffff;
   padding-left: 40px;
   outline: 2px ridge rgba(255, 255, 255, 0.1);
 }
-footer button[type=submit] {
+footer .stayUpdated button[type=submit] {
   background-color: #ffffff;
   cursor: pointer;
   padding: 8px 30px;
-}
-footer .copyright {
-  background-color: #000000;
-}
-footer .copyright p {
-  color: #ffffff;
 }
 footer adress {
   color: #1F2022;
@@ -589,13 +577,23 @@ footer adress span {
   display: block;
 }
 footer .copyright {
+  background-color: #000000;
   text-align: center;
+  margin-top: 20px;
 }
 footer .copyright p {
+  color: #ffffff;
   padding: 10px 0;
 }
 
 @media (max-width: 1170px) {
+  header .headerContentContainer h1 {
+    font-size: 138px;
+    font-size: 6.9rem;
+  }
+  header .socialMedia {
+    padding: 0 10px 50px 0;
+  }
   h2 {
     font-size: 24px;
     font-size: 1.2rem;
@@ -610,16 +608,23 @@ footer .copyright p {
   }
   .ourMenuContent p,
 .dessertContent p {
-    font-size: 17px;
-    font-size: 0.85rem;
+    font-size: 18px;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 1260px) {
+@media (max-width: 1160px) {
   .theGram img {
     max-width: 95%;
   }
 }
 @media (max-width: 1045px) {
+  header .headerContentContainer h1 {
+    font-size: 118px;
+    font-size: 5.9rem;
+  }
+  header .socialMedia {
+    padding: 0 10px 50px 0;
+  }
   footer .footerContentFlex {
     padding-left: 26px;
   }
@@ -631,29 +636,41 @@ footer .copyright p {
     padding-left: 30px;
   }
 }
-@media (max-width: 925px) {
+@media (max-width: 962px) {
   header h1 {
     font-size: 100px;
     font-size: 5rem;
     line-height: 100px;
   }
-  header .socialMedia {
-    padding: 0 15px 50px 50px;
+  p {
+    padding-bottom: 35px;
+  }
+  section.dessert {
+    padding: 90px 25px;
+  }
+}
+@media (max-width: 925px) {
+  header .headerContentContainer h1 {
+    line-height: 88px;
+    padding-left: 20px;
+  }
+  header .headerContentContainer .socialMedia {
+    display: none;
   }
   section h2 {
     text-align: center;
-    margin-top: 20px;
+    padding: 40px 0 30px 0;
   }
-  .ourMenuFlex {
+  section .ourMenuFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 4px;
     width: 90%;
     margin: 0 auto;
   }
-  .btnContainer {
+  section .btnContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -661,7 +678,7 @@ footer .copyright p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .dessert .dessertContentContainer {
+  section .dessert .dessertContentContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -673,9 +690,9 @@ footer .copyright p {
     width: 90%;
     margin: 0 auto;
   }
-  .dessert .dessertContentContainer .dessertImgContainer {
+  section .dessert .dessertContentContainer .dessertImgContainer {
     min-width: 100%;
-    padding: 50px 0 20px 268px;
+    padding: 0 20px 240px;
   }
   footer .footerContentFlex {
     padding-left: 26px;
@@ -688,5 +705,232 @@ footer .copyright p {
     padding-left: 30px;
     font-size: 14px;
     font-size: 0.7rem;
+  }
+}
+@media (max-width: 856px) {
+  section.dessert {
+    padding: 65px 15px;
+  }
+  section.dessert h2 {
+    padding-top: 0;
+  }
+  section.dessert .dessertContentContainer .dessertContent {
+    max-width: 60%;
+    padding-left: 30px;
+  }
+  footer h2,
+footer p {
+    text-align: center;
+    padding: 0;
+  }
+  footer .footerContentFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  footer .footerContentFlex .contact,
+footer .footerContentFlex .stayUpdated {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footerContentFlex .contact h2 {
+    padding-bottom: 10px;
+  }
+  footer .footerContentFlex .stayUpdated {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  footer .footerContentFlex .stayUpdated p {
+    padding: 8px 0;
+  }
+}
+@media (max-width: 800px) {
+  section.dessert .dessertContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.dessert .dessertContentContainer .dessertContent {
+    min-width: 100%;
+    padding: 40px 15px 0 20px;
+  }
+  section.contactLinks {
+    padding: 60px 0;
+  }
+  section.contactLinks div {
+    padding: 30px 40px;
+    margin: 0;
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
+  section.contactLinks div i {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 708px) {
+  header .headerContentContainer h1 {
+    line-height: 78px;
+    padding-left: 15px;
+  }
+  .ourMenu p {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 670px) {
+  header .headerContentContainer h1 {
+    line-height: 73px;
+    padding-left: 10px;
+    font-size: 90px;
+    font-size: 4.5rem;
+  }
+  .btn {
+    padding: 5px 12px;
+  }
+}
+@media (max-width: 670px) {
+  header .headerContentContainer h1 {
+    line-height: 65px;
+    font-size: 80px;
+    font-size: 4rem;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar .navItemFlex {
+    display: none;
+  }
+  .navbar i {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  section h2 {
+    text-align: center;
+    padding: 40px 0 30px 0;
+  }
+  section .ourMenuFlex {
+    width: 100%;
+  }
+  footer .contact,
+footer .stayUpdated {
+    text-align: center;
+    padding: 30px 0;
+  }
+  footer .contact form,
+footer .stayUpdated form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .contact form input[type=email],
+footer .stayUpdated form input[type=email] {
+    height: 45px;
+  }
+  footer .contact button[type=submit],
+footer .stayUpdated button[type=submit] {
+    padding: 6px 30px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 455px) {
+  header .headerContentFlex {
+    position: relative;
+    padding-top: 50px;
+  }
+  header .headerContentFlex .headerImgContainer img {
+    width: 80%;
+  }
+  header .headerContentContainer {
+    position: absolute;
+    left: 44%;
+    top: -1%;
+    width: 41%;
+  }
+  header .headerContentContainer h1 {
+    line-height: 42px;
+    font-size: 50px;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 538px) {
+  header .headerContentContainer h1 {
+    line-height: 48px;
+    font-size: 60px;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 454px) {
+  section.theGram .galleryFlex {
+    min-width: 96%;
+  }
+  section.theGram .galleryFlex .gramImgContainer {
+    width: 50%;
+  }
+  section.theGram .remove {
+    display: none;
+  }
+  section.contactLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+  }
+  section.contactLinks div {
+    padding: 30px 0;
+    margin: 0;
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 420px) {
+  section.dessert .dessertContentContainer .dessertContent {
+    min-width: 100%;
+  }
+  footer .stayUpdated form input[type=email] {
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .stayUpdated button[type=submit] {
+    padding: 6px 30px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 360px) {
+  header .headerContentContainer {
+    top: 2%;
+  }
+  header .headerContentContainer h1 {
+    line-height: 38px;
+    font-size: 50px;
+    font-size: 2.5rem;
   }
 }

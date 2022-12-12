@@ -32,6 +32,7 @@
           <li><a href="#" class="navLinks">Blog</a></li>
           <li><a href="#" class="navLinks">Contact</a></li>
         </ul>
+        <i class="fa-sharp fa-solid fa-bars"></i>
       </nav>
       <!-- .Navbar Ends -->
       <div class="wrapper headerContentFlex">
@@ -78,8 +79,9 @@
     </header>
     <!-- Header End -->
 
-    <main class="wrapper" id="mainContent">
-      <section class="ourMenu">
+    <main id="mainContent">
+      <!-- class="wrapper" -->
+      <section class="ourMenu wrapper">
         <div class="ourMenuFlex">
           <div class="ourMenuContentContainer">
             <div class="ourMenuContent">
@@ -92,7 +94,7 @@
                 ratione!
               </p>
               <div class="btnContainer">
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn btnAnimation">Read More</a>
               </div>
             </div>
           </div>
@@ -181,7 +183,7 @@
               alt="Salad"
             />
           </div>
-          <div class="gramImgContainer flipCantainer">
+          <div class="gramImgContainer flipCantainer remove">
             <img
               class="flipImg"
               src="./assets/gallery-photo-3.jpg"
@@ -225,11 +227,10 @@
                 name="email"
                 id="email"
                 placeholder="email address"
+                required
               />
               <div class="submit">
-                <button type="submit" class="btn noTransition">
-                  Subscribe
-                </button>
+                <button type="submit" class="btn">Subscribe</button>
               </div>
             </form>
           </div>

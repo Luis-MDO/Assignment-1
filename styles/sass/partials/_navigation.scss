@@ -1,4 +1,11 @@
 .navbar {
+
+  i {
+    display: none;
+    color: $solidBlack;
+    @include fontSize(40);
+  }
+
   .navItemFlex {
     display: flex;
     justify-content: center;

@@ -1,6 +1,6 @@
 section.dessert {
   background-color: $tertiary;
-  // height: 60vh;
+  padding: 120px 0;
 
   display: flex;
   align-items: center;
@@ -8,11 +8,6 @@ section.dessert {
   .dessertContentContainer {
     display: flex;
     justify-content: center;
-
-    .dessertImgContainer {
-      max-width: 20%;
-
-    }
 
     .dessertContent {
       max-width: 65%;
